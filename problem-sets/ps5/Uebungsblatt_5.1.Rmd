@@ -402,7 +402,7 @@ Bedeutet dies, dass mehr Weiterbildung zu mehr Arbeitslosigkeit fuehrt?
 
 c) Ergaenzen Sie folgenden Code um die durchschnittliche Teilnahme an Weiterbildungsprogrammen 1977 und die Arbeitslosenquote 1978 zwischen den Personen zu vergleichen, die 1975 arbeitslos/nicht arbeitslos waren.
 ```{r "2_c"}
-jtrain3%>% 
+n_train%>% 
  group_by(unem75) %>%
  summarize(mean(train), mean(unem78))
 
@@ -535,7 +535,7 @@ Meinen Sie dieses Design loest die meisten relevanten Selektionsproblem und erla
 
 ```{r "2_f_2"}
 
-"nein"
+"ja"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -556,3 +556,4 @@ Um Ihre Loesung zu diesem Uebungsblatt abzugeben klicken Sie auf "Check Problems
 Der Befehl kontrolliert ihr Uebungsblatt und erstellt eine Datei mit dem Namen  `problemsetname__username.sub` in Ihrem Arbeitsverzeichnis, die Ihre Loesung und die Log Dateien enthaelt.
 Laden Sie diese Datei (mit der Endung .sub) dann auf Moodle hoch. 
 aendern Sie nicht den Namen der Datei!
+
